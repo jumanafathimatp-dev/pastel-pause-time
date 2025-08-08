@@ -18,8 +18,26 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				fredoka: ['Fredoka', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
+				
+				// Cute Clock Colors
+				'clock-face': 'hsl(var(--clock-face))',
+				'clock-text': 'hsl(var(--clock-text))',
+				'clock-shadow': 'hsl(var(--clock-shadow))',
+				'cute-pink': 'hsl(var(--cute-pink))',
+				'cute-lavender': 'hsl(var(--cute-lavender))',
+				'cute-mint': 'hsl(var(--cute-mint))',
+				'cute-peach': 'hsl(var(--cute-peach))',
+				'cute-yellow': 'hsl(var(--cute-yellow))',
+				'button-primary': 'hsl(var(--button-primary))',
+				'button-hover': 'hsl(var(--button-hover))',
+				'pause-bg': 'hsl(var(--pause-bg))',
+				'pause-text': 'hsl(var(--pause-text))',
+				'pause-accent': 'hsl(var(--pause-accent))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
@@ -70,25 +88,39 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'gentle-pulse': {
+					'0%, 100%': { transform: 'scale(1)', opacity: '1' },
+					'50%': { transform: 'scale(1.02)', opacity: '0.9' }
+				},
+				'popup-bounce': {
+					'0%': { transform: 'translate(-50%, -50%) scale(0.3)', opacity: '0' },
+					'50%': { transform: 'translate(-50%, -50%) scale(1.05)', opacity: '0.8' },
+					'100%': { transform: 'translate(-50%, -50%) scale(1)', opacity: '1' }
+				},
+				'clock-tick': {
+					'0%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.02)' },
+					'100%': { transform: 'scale(1)' }
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gentle-pulse': 'gentle-pulse 2s ease-in-out infinite',
+				'popup-bounce': 'popup-bounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
+				'clock-tick': 'clock-tick 1s ease-in-out',
+				'wiggle': 'wiggle 0.5s ease-in-out'
 			}
 		}
 	},

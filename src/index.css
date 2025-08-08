@@ -1,15 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Cute Clock Design System - Soft Pastels & Playful Elements */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cute Pastel Palette */
+    --background: 340 100% 97%;
+    --foreground: 340 15% 25%;
+    
+    /* Clock Specific Colors */
+    --clock-face: 320 60% 92%;
+    --clock-text: 340 25% 30%;
+    --clock-shadow: 320 40% 85%;
+    
+    /* Playful Accent Colors */
+    --cute-pink: 340 82% 78%;
+    --cute-lavender: 260 75% 82%;
+    --cute-mint: 140 60% 80%;
+    --cute-peach: 25 85% 80%;
+    --cute-yellow: 50 85% 85%;
+    
+    /* Interactive Elements */
+    --button-primary: 340 82% 78%;
+    --button-hover: 340 82% 72%;
+    --button-shadow: 340 40% 85%;
+    
+    /* Pause State Colors */
+    --pause-bg: 260 75% 92%;
+    --pause-text: 260 25% 35%;
+    --pause-accent: 260 75% 82%;
+    
+    /* Gradients */
+    --gradient-main: linear-gradient(135deg, hsl(340 82% 78% / 0.3), hsl(260 75% 82% / 0.3));
+    --gradient-clock: linear-gradient(145deg, hsl(320 60% 95%), hsl(320 60% 88%));
+    --gradient-button: linear-gradient(145deg, hsl(340 82% 78%), hsl(340 82% 72%));
+    
+    /* Shadows & Effects */
+    --shadow-soft: 0 8px 32px hsl(340 40% 85% / 0.4);
+    --shadow-button: 0 4px 16px hsl(340 40% 85% / 0.3);
+    --shadow-inset: inset 0 2px 8px hsl(320 40% 85% / 0.2);
+    
+    /* Animation Timing */
+    --transition-cute: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-gentle: all 0.2s ease-out;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -100,6 +137,74 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-fredoka;
+  }
+}
+
+@layer components {
+  /* Clock Components */
+  .clock-container {
+    @apply relative rounded-3xl p-8 bg-gradient-to-br;
+    background: var(--gradient-clock);
+    box-shadow: var(--shadow-soft), var(--shadow-inset);
+    border: 2px solid hsl(var(--clock-shadow));
+  }
+  
+  .clock-display {
+    @apply text-6xl md:text-8xl font-bold text-center;
+    color: hsl(var(--clock-text));
+    text-shadow: 0 2px 8px hsl(var(--clock-shadow));
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.05em;
+  }
+  
+  .clock-button {
+    @apply px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300;
+    @apply transform hover:scale-105 active:scale-95;
+    background: var(--gradient-button);
+    box-shadow: var(--shadow-button);
+    color: white;
+    border: 2px solid hsl(var(--button-shadow));
+  }
+  
+  .clock-button:hover {
+    background: hsl(var(--button-hover));
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px hsl(var(--button-shadow) / 0.4);
+  }
+  
+  .pause-message {
+    @apply text-center p-4 rounded-xl mb-4;
+    background: hsl(var(--pause-bg));
+    color: hsl(var(--pause-text));
+    border: 2px solid hsl(var(--pause-accent));
+    animation: gentle-pulse 2s ease-in-out infinite;
+  }
+  
+  .pause-counter {
+    @apply text-sm font-medium;
+    color: hsl(var(--pause-accent));
+  }
+  
+  .cute-popup {
+    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    @apply p-6 rounded-2xl shadow-2xl z-50;
+    background: hsl(var(--cute-yellow));
+    border: 3px solid hsl(var(--cute-peach));
+    animation: popup-bounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer utilities {
+  .transition-cute {
+    transition: var(--transition-cute);
+  }
+  
+  .transition-gentle {
+    transition: var(--transition-gentle);
+  }
+  
+  .font-fredoka {
+    font-family: 'Fredoka', sans-serif;
   }
 }
