@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+[Project:pause time 🎯
+Basic Details
+Team Name: jumana fathima
+Team Members
+Team Lead: jumana fathima  
 
-## Project info
+Project Description
+[2-3 lines about what your project does]
 
-**URL**: https://lovable.dev/projects/8d07a17b-79eb-472d-a37f-73532dbfeb1f
+The Problem (that doesn't exist)
+[What ridiculous problem are you solving?]
 
-## How can I edit this code?
+The Solution (that nobody asked for)
+[How are you solving it? Keep it fun!]
 
-There are several ways of editing your application.
+Technical Details
+Technologies/Components Used
+For Software:
 
-**Use Lovable**
+[Languages used]
+html,javascript,css
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8d07a17b-79eb-472d-a37f-73532dbfeb1f) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+[Tools used]
 
-**Use your preferred IDE**
+For Software:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Installation
+[commands]
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Run
+[commands]
 
-Follow these steps:
+Project Documentation
+For Software:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Screenshots (Add at least 3)
+https://drive.google.com/file/d/1EppTJ58cysFaorTJLwCramD_zzXLnCQL/view?usp=drive_link](Add screenshot 1 here with proper name) Add caption explaining what this shows
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+https://drive.google.com/file/d/1_fsOKPPaAd_Aq8C-VWpu2e41eb1JCXrH/view?usp=drive_link(Add screenshot 2 here with proper name) Add caption explaining what this shows
 
-# Step 3: Install the necessary dependencies.
-npm i
+https://drive.google.com/file/d/1tFwY6V7_gXP9BlLwRXAe34OTXfL2ZCDo/view?usp=drive_link_link Add caption explaining what this shows
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Diagrams
+![Workflow](Add your workflow/architecture diagram here) Add caption explaining your workflow
 
-**Edit a file directly in GitHub**
+For Hardware:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Schematic & Circuit
+![Circuit](Add your circuit diagram here) Add caption explaining connections
 
-**Use GitHub Codespaces**
+![Schematic](Add your schematic diagram here) Add caption explaining the schematic
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Build Photos
+![Components](Add photo of your components here) List out all components shown
 
-## What technologies are used for this project?
+![Build](Add photos of build process here) Explain the build steps
 
-This project is built with:
+![Final](Add photo of final product here) Explain the final build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Project Demo
+Video
+https://drive.google.com/file/d/1vPuawx4ry2zmxddbOHTstEuZFx-g_yLX/view?usp=sharing Explain what the video demonstrates
 
-## How can I deploy this project?
+Additional Demos
+[Add any extra demo materials/links]
 
-Simply open [Lovable](https://lovable.dev/projects/8d07a17b-79eb-472d-a37f-73532dbfeb1f) and click on Share -> Publish.
+Team Contributions
+ Concept, design, and development of the live timer that does absolutely nothing... in style.Paused time, but sadly life kept going.Team Contributions  ,Created a timer that doesn't care about time.  Pressed pause on time, but forgot to pause deadlines.  
+Handled everything… very slowly.Team Contributions  
 
-## Can I connect a custom domain to my Lovable project?
+- Designed the logic for a timer that doesn’t really help  
+- Built the UI to stare at while time keeps ticking  
+- Wasted time... efficiently
+Made with ❤️ at TinkerHub Useless Projects
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Static Badge Static Badge
